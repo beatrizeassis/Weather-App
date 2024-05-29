@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -9,6 +12,32 @@
   <div class="card">
     <div class="search">
       <input type="text" placeholder="Enter city name" spellcheck="false">
-      <button>search</button>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+    <div class="weather">
+      <i class="fa-solid fa-cloud-showers-heavy fa-4x"></i>
+      <h1 class="temp">15°C</h1>
+      <h2 class="city">London</h2>
+      <div class="details">
+        <div class="col">
+          <i class="fa-solid fa-droplet fa-2x"></i>
+          <div>
+            <p class="humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="col">
+          <i class="fa-solid fa-wind fa-2x"></i>
+          <div>
+            <p class="wind">15 km/h</p>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
